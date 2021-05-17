@@ -1,2 +1,45 @@
 2021-05-16 13:25:32,963 INFO: Microblog startup [in /home/alit/Desktop/Microblog/Micro_blog/app/__init__.py:44]
 2021-05-16 13:38:43,641 INFO: Microblog startup [in /home/alit/Desktop/Microblog/Micro_blog/app/__init__.py:44]
+2021-05-16 18:20:30,994 INFO: Microblog startup [in /home/alit/Desktop/Microblog/Micro_blog/app/__init__.py:44]
+2021-05-17 15:55:17,229 INFO: Microblog startup [in /home/alit/Desktop/Microblog/Micro_blog/app/__init__.py:44]
+2021-05-17 15:55:55,680 ERROR: Exception on /index [GET] [in /home/alit/.local/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/alit/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/alit/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/alit/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/alit/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/alit/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alit/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alit/.local/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/alit/Desktop/Microblog/Micro_blog/app/routes.py", line 32, in index
+    prev_url = url_for('index',posts.prev_num) \
+TypeError: url_for() takes 1 positional argument but 2 were given
+2021-05-17 15:56:21,124 ERROR: Exception on /index [GET] [in /home/alit/.local/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/alit/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/alit/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/alit/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/alit/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/alit/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alit/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alit/.local/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/alit/Desktop/Microblog/Micro_blog/app/routes.py", line 32, in index
+    prev_url = url_for('index',posts.prev_num) \
+TypeError: url_for() takes 1 positional argument but 2 were given
+2021-05-17 15:57:29,677 INFO: Microblog startup [in /home/alit/Desktop/Microblog/Micro_blog/app/__init__.py:44]
+2021-05-17 16:09:38,747 INFO: Microblog startup [in /home/alit/Desktop/Microblog/Micro_blog/app/__init__.py:44]
+2021-05-17 16:16:23,292 INFO: Microblog startup [in /home/alit/Desktop/Microblog/Micro_blog/app/__init__.py:44]
