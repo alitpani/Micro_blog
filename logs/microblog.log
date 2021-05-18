@@ -36,3 +36,6 @@ Traceback (most recent call last):
     sock.connect(sa)
 ConnectionRefusedError: [Errno 111] Connection refused
 2021-05-18 21:29:39,871 INFO: Microblog startup [in /home/alit/Desktop/Microblog/Micro_blog/app/__init__.py:45]
+2021-05-18 23:44:19,874 INFO: Microblog startup [in /home/alit/Desktop/Microblog/Micro_blog/app/__init__.py:48]
+2021-05-19 00:34:50,584 INFO: Microblog startup [in /home/alit/Desktop/Microblog/Micro_blog/app/__init__.py:48]
+2021-05-19 00:36:30,977 INFO: Microblog startup [in /home/alit/Desktop/Microblog/Micro_blog/app/__init__.py:48]
