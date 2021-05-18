@@ -39,3 +39,52 @@ ConnectionRefusedError: [Errno 111] Connection refused
 2021-05-18 23:44:19,874 INFO: Microblog startup [in /home/alit/Desktop/Microblog/Micro_blog/app/__init__.py:48]
 2021-05-19 00:34:50,584 INFO: Microblog startup [in /home/alit/Desktop/Microblog/Micro_blog/app/__init__.py:48]
 2021-05-19 00:36:30,977 INFO: Microblog startup [in /home/alit/Desktop/Microblog/Micro_blog/app/__init__.py:48]
+2021-05-19 01:14:31,701 INFO: Microblog startup [in /home/alit/Desktop/Microblog/Micro_blog/app/__init__.py:50]
+2021-05-19 01:14:38,577 ERROR: Exception on /index [GET] [in /home/alit/.local/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/alit/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/alit/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/alit/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/alit/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/alit/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alit/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alit/.local/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/alit/Desktop/Microblog/Micro_blog/app/routes.py", line 36, in index
+    return render_template('index.html',title = 'Home',posts = posts.items,form=form, next_url=next_url,prev_url= prev_url )
+  File "/home/alit/.local/lib/python3.8/site-packages/flask/templating.py", line 137, in render_template
+    return _render(
+  File "/home/alit/.local/lib/python3.8/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/alit/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/alit/.local/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/alit/.local/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/alit/Desktop/Microblog/Micro_blog/app/templates/index.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "/home/alit/Desktop/Microblog/Micro_blog/app/templates/base.html", line 2, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "/home/alit/.local/lib/python3.8/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "/home/alit/.local/lib/python3.8/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 4, in block "doc"
+    {%- block html %}
+  File "/home/alit/.local/lib/python3.8/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block "html"
+    {% block body -%}
+  File "/home/alit/.local/lib/python3.8/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 23, in block "body"
+    {% block content -%}
+  File "/home/alit/Desktop/Microblog/Micro_blog/app/templates/base.html", line 49, in block "content"
+    {% block app_content %}{% endblock %}
+  File "/home/alit/Desktop/Microblog/Micro_blog/app/templates/index.html", line 11, in block "app_content"
+    {% include '_post.html' %}
+  File "/home/alit/Desktop/Microblog/Micro_blog/app/templates/_post.html", line 12, in top-level template code
+    said {{ moment(post.timestamp).forNow() }}:
+jinja2.exceptions.UndefinedError: 'flask_moment._moment object' has no attribute 'forNow'
+2021-05-19 01:16:11,279 INFO: Microblog startup [in /home/alit/Desktop/Microblog/Micro_blog/app/__init__.py:50]
